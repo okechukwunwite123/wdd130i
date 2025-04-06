@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page displays a poll to collate people's opinions on a critical issue of concern">
+    <meta name="author" content="Onwude James Uchenna">
+    <title>WDD 130 | HTML Form Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Onwude James Uchenna | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="fav_browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="edge">Edge</option>
+                        <option value="firefox_mozilla">Firefox Mozilla</option>
+                        <option value="opera">Opera</option>
+                        <option value="safari">Safari</option>
+                        <option value="internet_explorer">Internet Explorer</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <label for="feedback">List the places you have lived.</label>
+                <textarea name="feedback" id="feedback" rows="2" placeholder="Lagos, Ouagadougou, Limpopo, The Bahamas"></textarea>
+            </fieldset>
+        </form>
+        <div class="submit-container">
+            <button type="submit">Submit Poll</button>
+        </div>
+    </main>
+    <footer>
+        &copy;2025 | HTML Form - User Poll Activity | Onwude James Uchenna
+    </footer>
+</body>
+</html>

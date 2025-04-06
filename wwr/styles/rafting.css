@@ -1,0 +1,423 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+
+html {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+:root {
+    --primary-color: #0e06ac;
+    --secondary-color: #34C759;
+    --accent1-color: #FFC107;
+    --accent2-color: #964B00;
+}
+
+h1,h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p{
+    color: black;
+}
+
+.social-media-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    margin-right: 8px;
+    /* border: 1px solid #000; */
+}
+
+.social-media-links a img {
+    width: 20px;
+}
+
+.hero {
+    position: relative;
+}
+
+.logo {
+    width: 120px;
+    margin-right: 0.2rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    color: var(--primary-color);
+    background-color: rgba(208, 182, 97, 0.824);
+}
+
+.hero article {
+    background-color: rgba(0 0 0 / 0.4);
+    position: absolute;
+    top: 150px;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+.hero p {
+    color: papayawhip;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin: 1rem auto;
+    background-color: var(--accent1-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--primary-color);
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    padding: 0.1rem 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    font-size: 1.1rem;
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+.history-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.history-section p {
+    margin: 0;
+}
+
+.history-section img {
+    width: 150px;
+    height: auto;
+    box-shadow: 0 0 30px gray;
+    margin: 0 10px;
+}
+
+.history {
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.adventure-section {
+    border: 1px solid #000;
+    margin-bottom: 1.2rem;
+}
+
+.fig-items {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+}
+
+figure {
+    margin: 2px;
+}
+
+figure img {
+    width: 100px;
+    height: auto;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--accent1-color);
+    padding: 1.2rem 0;
+}
+
+footer p {
+    font-size: small;
+    margin-right: 1.2rem;
+    color: var(--primary-color);
+}
+
+.address-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.splash-heading {
+    grid-column: 1/4;
+}
+
+.customers-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+legend {
+    padding: 8px;
+    color: rgb(9, 9, 191);
+    font-size: 2rem;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1.5rem;
+}
+
+input, textarea {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+button, .btn {
+    margin: 16px;
+    background-color: navy;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+button:hover, .btn:hover {
+    background-color: rebeccapurple;
+}
+
+.submit-btn-container, .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.address-section, .customers-section {
+    border: 1px solid #333;
+    margin: 5px;
+    padding: .5rem;
+}
+
+form {
+    max-width: 672px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+.contact-main {
+    margin-bottom: .25rem;
+}
+
+.map-container {
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 682px ;
+    height: 300px; 
+    border:0;
+    align-self: center;
+    display: block;
+}
+
+.trip-info-container {
+    max-width: 210px;
+    background-color: #9391799c;
+}
+
+.trips-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0.75rem;
+}
+
+.table-section {
+    display: grid;
+    grid-template-columns: 1fr 170px;
+    background-color: antiquewhite;
+    margin-top: .25rem;
+}
+
+.table-section aside {
+    border: 1px solid #000;
+    background-color: #9391799c;
+    /* margin: 15px 0; */
+    border-radius: 5px;
+}
+
+.table-section button {
+    font-size: x-small;
+    font-weight: 300;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 55%;
+    text-align: right;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+}
+
+.trip-hero-btn, .home-hero-btn {
+    position: absolute;
+    top: 75%;
+    right: 10px;
+}
+
+.center-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.trip-table {
+    border: none;
+}
+
+.trip-aside {
+    position: relative;
+}
+
+.aside-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.aside-text {
+    position: absolute;
+    top: 10px;
+    color:#000;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.weekend-cruise {
+    position: absolute;
+    top: 80px;
+    background-color: #bbff0f;
+    width: 100%;
+}
+
+.weekend-cruise img {
+    width: 100%;
+}
+
+.home-img-container {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: center;
+    justify-content: space-evenly;
+    margin: 1.5rem 0; */
+}
+
+.overlapping-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(136, 140, 148, 0.498);
+}
+
+.overlapping-container img {
+    padding: 1rem;
+}
+
+.overlap-magnifier {
+    position: relative;
+    margin: 2.5rem 0;
+}
+
+.overlap {
+    width: 250px;
+    height: 130px;
+    background-color: #3b97ecc1;
+    color: #eee;
+    position: absolute;
+    top: 33px;
+    right: 18%;
+    border-radius: 4px;
+}
+
+.overlap p {
+    font-size: x-small;
+}
+
+.overlap button {
+    height: 30px;
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.home-body {
+    border: 1px solid #000;
+}
+
+.signup-section label, .signup-section input {
+    display: block;
+    width: 85%;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+
+.tr {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5px;
+}
